@@ -161,30 +161,8 @@ const createCustomShadow = (color: string): ICustomShadowOptions => {
 //***********************************************
 
 export const gradients = {
-  normal: "linear-gradient(135deg, #aca974, #ccc9aa, #eaeade)",
-  fighting: "linear-gradient(135deg, #800b11, #e81319, #d36063, #d36063)",
-  flying: "linear-gradient(135deg, #085764, #5eb9b2)",
-  poison: "linear-gradient(135deg, #611380, #a819d7, #ca72ec)",
-  ground: "linear-gradient(135deg, #bfac21, #e1d158, #ede293)",
-  rock: "linear-gradient(135deg, #474026, #776a3e, #94834f, #b4a270)",
-  bug: "linear-gradient(135deg, #91ba2e, #bddd6e, #d9fe9e)",
-  ghost: "linear-gradient(135deg, #472b53, #8e55a4, #bd98cb)",
-  steel: "linear-gradient(135deg, #454545, #7b8e8a, #bbc5c4)",
-  fire: "linear-gradient(135deg, #fc0c0b, #f67f0b, #f8b80e)",
-  water: "linear-gradient(135deg, #08517a, #0a7abc, #36aff6)",
-  grass: "linear-gradient(135deg, #204000, #3e9709, #67f70a)",
-  electric: "linear-gradient(135deg, #969101, #fffa24, #f7ff85)",
-  psychic: "linear-gradient(135deg, #8a0532, #ec0e63, #f55792, #fcb6d0)",
-  ice: "linear-gradient(135deg, #103d43, #1995a1, #66d1e5, #dcfcf7)",
-  dragon: "linear-gradient(135deg, #29036a, #8a55fd, #d6b1fe)",
-  dark: "linear-gradient(135deg, #2d221c, #5f4632, #916852, #4f4f4f)",
-  fairy: "linear-gradient(135deg, #f87ea7, #ffa0c2, #fdd1e0)",
-  // $gradient-top: linear-gradient(0deg, #ffd6ffff, #e7c6ffff, #c8b6ffff, #b8c0ffff, #bbd0ffff);
-  // $gradient-radial: radial-gradient(#ffd6ffff, #e7c6ffff, #c8b6ffff, #b8c0ffff, #bbd0ffff);
-  gradient1:
-    "linear-gradient(90deg, #7400b8ff, #6930c3ff, #5e60ceff, #5390d9ff, #4ea8deff, #48bfe3ff, #56cfe1ff, #64dfdfff, #72efddff, #80ffdbff, #5390d9ff, #5e60ceff, #6930c3ff,  #7400b8ff)",
-  // $gradient-top: linear-gradient(0deg, #cad2c5ff, #84a98cff, #52796fff, #354f52ff, #2f3e46ff);
-  // $gradient-top: linear-gradient(0deg, #edede9ff, #d6ccc2ff, #f5ebe0ff, #e3d5caff, #d5bdafff);
+  0: "linear-gradient(90deg, #DC35F2, #AA31FC, #7C2FFA, #6C2EF2, #0D0D0D)",
+  1: "linear-gradient(90deg, #7400b8ff, #6930c3ff, #5e60ceff, #5390d9ff, #4ea8deff, #48bfe3ff, #56cfe1ff, #64dfdfff, #72efddff, #80ffdbff, #5390d9ff, #5e60ceff, #6930c3ff,  #7400b8ff)",
 };
 
 //***********************************************
@@ -222,8 +200,7 @@ const theme = {
   components: {
     buttons: {
       buttonDefault: {
-        gradientColor: gradients.gradient1,
-        background: grey[100]
+        background: grey[100],
       },
     },
     inputs: {
