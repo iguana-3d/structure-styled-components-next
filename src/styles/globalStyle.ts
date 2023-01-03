@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 interface IGlobalProps {
-   hideOverflowOnModal?: boolean;
+  hideOverflowOnModal?: boolean;
 }
 
 export default createGlobalStyle<IGlobalProps>`
@@ -30,7 +30,7 @@ body {
    font-weight: ${(props) => props.theme.typeFaceWeight.regular};
    font-size: 1.6rem;
    line-height: 1.6;
-   overflow: ${props => props.hideOverflowOnModal ? 'hidden' : 'auto'};
+   overflow: ${(props) => (props.hideOverflowOnModal ? "hidden" : "auto")};
 }
 hr {
    width: 100%;
@@ -70,6 +70,7 @@ h3 {
 } */
 #nprogress {
           pointer-events: none;
+          z-index: 99999;
           
           & .bar {
             top: 0;
@@ -78,9 +79,10 @@ h3 {
             width: 100%;
             position: fixed;
             z-index: 20;
-            background-color: ${(props) => props.theme.pallete.colors.primary};
+            background-color: ${(props) =>
+              props.theme.pallete.colors.primary.main};
             box-shadow: 0 0 .5rem ${(props) =>
-              props.theme.pallete.colors.primary};
+              props.theme.pallete.colors.primary.main};
           }
           & .peg {
             right: 0;
@@ -90,8 +92,9 @@ h3 {
             display: block;
             position: absolute;
             transform: rotate(0deg) translate(0px, 0px);
-            box-shadow: 0 0 0 ${(props) => props.theme.pallete.colors.primary},
-             0 0 0 ${(props) => props.theme.pallete.colors.primary};
+            box-shadow: 0 0 0 ${(props) =>
+              props.theme.pallete.colors.primary.main},
+             0 0 0 ${(props) => props.theme.pallete.colors.primary.main};
           }
          }
 `;
